@@ -9,11 +9,15 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "destination": "server.js"
+      "dest": "server.js"
     },
     {
       "src": "/api/health",
-      "destination": "server.js"
+      "dest": "server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "client/dist/$1"
     }
   ],
   "headers": [
